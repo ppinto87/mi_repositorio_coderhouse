@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header id="arriba">
+        <div>
+            <h1 class="nombreMarca">
+                Infinitus Life
+            </h1>
+            <span class="logo">LOGO</span>
+            <nav class="navigation">
+                <ul class="menuNavegacion">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./nuestrosEquipos.html">Nuestros Equipos</a>
+                        <ul class="menuEquipos">
+                            <li><a href="./nuestrosEquipos.html">Vela Life</a></li>
+                            <li><a href="./nuestrosEquipos.html">Crio Life</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./ventaAccesorios.html">Venta Accesorios</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <fieldset>
+                <legend>Ingrese sus Datos</legend>
+                <form action="" method="">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" required>
+                    </div>
+                    <div>
+                        <label for="mail">Mail</label>
+                        <input type="email" id="mail" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Telefono</label>
+                        <select name="Prefijo" id="">
+                            <option value="AR">+54</option>
+                            <option value="UR">+598</option>
+                            <option value="BR">+55</option>
+                        </select>
+                        <input type="text" id="telefono">
+                    </div>
+                    <div>
+                        <label for="equipo">Equipo Interesado</label>
+                        <select name="equipoInteresado" id="equipo">
+                            <option value="vela">Vela Life</option>
+                            <option value="crio">Crio Life</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="provincia">Provincia</label>
+                        <input type="text" id="provincia">
+                    </div>
+                    <div>
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" id="ciudad">
+                    </div>
+                    <div>
+                        <label for="info">¿Desea recibir informacion por productos nuevos?</label>
+                        <input type="checkbox" name="" id="info">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                    </div>
+                    <div>
+                        <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <input id="enviar" type="submit" value="Enviar Datos" />
+                        <input id="reset" type="reset" value="Limpiar" />
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </main>
+
+    <footer>
+        <h3>
+            Infinitus Bell
+        </h3>
+        <p>
+            La empresa líder en diseño y fabricación de equipos de medicina estética avanzada en Argentina.
+        </p>
+    </footer>
+
+</body>
+
+</html>

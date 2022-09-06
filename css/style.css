@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS DE BODY */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(227, 229, 230, 0.863);
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* ESTILOS DE HEADER */
+
+header {
+    /* background-color: #9bfab0; */
+    background-color: #d0fdd7;
+    width: 100%;
+    position: fixed;
+}
+
+
+
+/* ESTILO MENU NAVEGACION */
+
+.navigation ul {
+    text-align: right;
+    list-style: none;
+}
+
+.menuNavegacion>li {
+    position: relative;
+    display: inline-block;
+}
+
+.menuNavegacion>li>a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.navigation ul li a:hover {
+    background-color: #9bfab0;
+    transition: all .5s;
+    color: white;
+    border-radius: 5px;
+}
+
+/* ESTILO SUBMENU EQUIPOS */
+
+.menuEquipos {
+    position: absolute;
+    background-color: rgb(141, 235, 188);
+    width: 110%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.menuEquipos li a {
+    display: block;
+    padding: 15px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+.menuNavegacion li:hover .menuEquipos {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ESTILOS DE MAIN */
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    padding-top: 130px;
+
+}
+
+#fondo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ESTILOS DE FOOTER */
+
+footer {
+    background-color: rgb(92, 107, 236);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
