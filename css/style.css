@@ -11,21 +11,34 @@ body {
     height: 100vh;
     background-color: rgba(227, 229, 230, 0.863);
     overflow-x: hidden;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#grilla{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "header header header"
+                         "main main main"        
+                         "main main main" 
+                         "footer footer footer";
 }
 
 /* ESTILOS DE HEADER */
 
 header {
     /* background-color: #9bfab0; */
+    grid-area: header;
     background-color: #d0fdd7;
     width: 100%;
+    height: 10%;
     position: fixed;
 }
 
 
-
 /* ESTILO MENU NAVEGACION */
+
 
 .navigation ul {
     text-align: right;
@@ -39,7 +52,7 @@ header {
 
 .menuNavegacion>li>a {
     display: block;
-    padding: 15px 20px;
+    padding: 10px;
     text-decoration: none;
     color: black;
 }
@@ -50,6 +63,7 @@ header {
     transition: all .5s;
     color: white;
     border-radius: 5px;
+    
 }
 
 /* ESTILO SUBMENU EQUIPOS */
@@ -57,10 +71,11 @@ header {
 .menuEquipos {
     position: absolute;
     background-color: rgb(141, 235, 188);
-    width: 110%;
+    /* width: 110%; */
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
+    border-radius: 5px;    
 }
 
 .menuEquipos li a {
@@ -69,6 +84,7 @@ header {
     text-align: left;
     text-decoration: none;
     color: black;
+    
 }
 
 .menuNavegacion li:hover .menuEquipos {
@@ -78,25 +94,89 @@ header {
 
 /* ESTILOS DE MAIN */
 
-main {
+main {    
     width: 100vw;
-    height: 100vh;
+    height: 90vh;   
     background-color: white;
-    padding-top: 130px;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "sectuno sectuno"
+                         "sectdos sectdos";
 
 }
 
-#fondo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+#section-uno{
+    grid-area: sectuno;
+}
+
+#section-dos {
+    grid-area: sectdos;
+    display: grid;
+    grid-template-columns: (1, 1fr);
+    grid-template-rows: (1, 1fr);
+    grid-template-areas: "texto1 texto2";
+
+}
+
+#texto-uno{
+    grid-area: texto1;
+}
+#texto-dos{
+    grid-area: texto2;
+}
+
+#imagsection{
+    width: 100vw;
+  
 }
 
 
 /* ESTILOS DE FOOTER */
 
 footer {
+    grid-area: footer;
+    width: 100vw;
     background-color: rgb(92, 107, 236);
-    padding-top: 5px;
-    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+}
+
+footer div img {
+    width: 2vw;
+    height: 2vh;
+    display: flex;
+    padding-right: 10px;
+    padding-bottom: 2px;
+}
+
+#imagenesFooter{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+
+/* MEDIA QUERYS */
+
+@media only screen and (max-width: 1000px){
+    #imagsection{
+        width: 800px;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    #imagsection{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #imagsection{
+        width: 200px;
+    }
 }
