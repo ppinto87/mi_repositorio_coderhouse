@@ -5,111 +5,160 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <link rel="stylesheet" href="../css/style.css">
    <title>Equipos</title>
 </head>
 
 <body class="bodyNuestrosEquipos">
-   <header id="arriba">
-      <div>
-         <h1 class="nombreMarca">
-            Infiniti Life
-         </h1>
-         <span class="logo">LOGO</span>
-         <nav class="navigation">
-            <ul class="menuNavegacion">
-               <li><a href="../index.html">Inicio</a></li>
-               <li><a href="./nosotros.html">Nosotros</a></li>
-               <li><a href="./nuestrosEquipos.html">Nuestros Equipos</a>
-                  <ul class="menuEquipos">
-                     <li><a href="./nuestrosEquipos.html">Vela Life</a></li>
-                     <li><a href="./nuestrosEquipos.html">Crio Life</a></li>
-                  </ul>
-               </li>
-               <li><a href="./ventaAccesorios.html">Venta Accesorios</a></li>
-               <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-         </nav>
+   <header class="container">
+
+      <div class="row" id="header">
+
+         <div class="row">
+            <h2 class="col" id="nombreMarca">
+               Infiniti Life
+            </h2>
+         </div>
+
+         <div class="row text-center">
+            <nav class="col navbar navbar-expand-lg navbar-light" id="navigation">
+               <div class="container">
+                  <img src="#" alt="LOGO">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                     aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                     <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                           <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle active" aria-current="page" href="#"
+                              id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Nuestros Equipos
+                           </a>
+                           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="menuEquipos">
+                              <li><a class="dropdown-item" href="./nuestrosEquipos.html#velaLife">Vela Life</a></li>
+                              <li><a class="dropdown-item" href="./nuestrosEquipos.html#crioLife">Crio Life</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="./ventaAccesorios.html">Venta Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+
       </div>
+
    </header>
 
-   <main>
-      <div id="velaLife">
-         <table border="2px" cellspacing="5px">
-            <tr>
-               <th>Equipo</th>
-               <th>Tecnologias</th>
-               <th>Beneficios</th>
-            </tr>
-            <tr>
-               <td>
-                  Vela Infi
-               </td>
-               <td>
-                  <ul>
-                     <li>Vacuum: Modela el contorno corporal y favorece el drenaje linfático</li>
-                     <li>Masaje por rodillos automáticos: Atenúa la celulitis y mejora la circulación local</li>
-                     <li>Infrarrojos: Reduce la adiposidad y modela el contorno corporal</li>
-                     <li>Radiofrecuencia bipolar: Estimula la formación de colágeno y mejora la textura de la piel</li>
-                  </ul>
-               </td>
-               <td>
-                  <ol>
-                     <li>Reduce la aparición de la celulitis rebelde y resistente. </li>
-                     <li>Elimina la grasa localizada.</li>
-                     <li>Reafirma la piel.</li>
-                     <li>Reduce la circunferencia corporal entre 1 y 7 cm.</li>
-                  </ol>
-               </td>
-            </tr>
-         </table>
-         <br>
-         <hr>
-         <br>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/5cGB_RLdfco" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-         <br>
+   <main class="container">
+      <br>
+      <div class="row" id="main">
+         
+         <div id="velaLife">
+            <table border="2px" cellspacing="5px">
+               <tr>
+                  <th>Equipo</th>
+                  <th>Tecnologias</th>
+                  <th>Beneficios</th>
+               </tr>
+               <tr>
+                  <td>
+                     Vela Infi
+                  </td>
+                  <td>
+                     <ul>
+                        <li>Vacuum: Modela el contorno corporal y favorece el drenaje linfático</li>
+                        <li>Masaje por rodillos automáticos: Atenúa la celulitis y mejora la circulación local</li>
+                        <li>Infrarrojos: Reduce la adiposidad y modela el contorno corporal</li>
+                        <li>Radiofrecuencia bipolar: Estimula la formación de colágeno y mejora la textura de la piel
+                        </li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ol>
+                        <li>Reduce la aparición de la celulitis rebelde y resistente. </li>
+                        <li>Elimina la grasa localizada.</li>
+                        <li>Reafirma la piel.</li>
+                        <li>Reduce la circunferencia corporal entre 1 y 7 cm.</li>
+                     </ol>
+                  </td>
+               </tr>
+            </table>
+            <br>
+            <hr>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5cGB_RLdfco"
+               title="YouTube video player" frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+               allowfullscreen></iframe>
+            <br>
+         </div>
+         <div id="crioLife">
+            <table border="2px" cellspacing="5px">
+               <tr>
+                  <th>Equipo</th>
+                  <th>Tecnologias</th>
+                  <th>Beneficios</th>
+               </tr>
+               <tr>
+                  <td>
+                     Crio Life
+                  </td>
+                  <td>
+                     <ul>
+                        <li>La tecnología del frío ataca a los tejidos grasos descomponiéndolos en un proceso denominado
+                           lipólisis.</li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ol>
+                        <li>Es una técnica no invasiva de reducción de la grasa corporal.</li>
+                        <li>No requiere tiempo de recuperación ni altera la vida diaria.</li>
+                        <li>La adiposidad se elimina de manera natural por lo que no eleva los niveles de triglicéridos
+                           en
+                           sangre ni pone en riesgo órganos vitales.</li>
+                        <li>Permite el tratamiento de varias zonas al mismo tiempo.</li>
+                     </ol>
+                  </td>
+               </tr>
+            </table>
+            <hr>
+         </div>
       </div>
-      <div id="crioLife">
-         <table border="2px" cellspacing="5px">
-            <tr>
-               <th>Equipo</th>
-               <th>Tecnologias</th>
-               <th>Beneficios</th>
-            </tr>
-            <tr>
-               <td>
-                  Crio Life
-               </td>
-               <td>
-                  <ul>
-                     <li>La tecnología del frío ataca a los tejidos grasos descomponiéndolos en un proceso denominado
-                        lipólisis.</li>
-                  </ul>
-               </td>
-               <td>
-                  <ol>
-                     <li>Es una técnica no invasiva de reducción de la grasa corporal.</li>
-                     <li>No requiere tiempo de recuperación ni altera la vida diaria.</li>
-                     <li>La adiposidad se elimina de manera natural por lo que no eleva los niveles de triglicéridos en
-                        sangre ni pone en riesgo órganos vitales.</li>
-                     <li>Permite el tratamiento de varias zonas al mismo tiempo.</li>
-                  </ol>
-               </td>
-            </tr>
-         </table>
-         <hr>
-      </div>
+
    </main>
-   <footer>
-      <h3>
-         Infiniti Life
-      </h3>
-      <p>
-         La empresa líder en diseño y fabricación de equipos de medicina estética avanzada en Argentina.
-      </p>
+   <footer class="container">
+      <div class="row" id="footer">
+         <div class="col-11 ">
+            <h3>
+               Infiniti Life
+            </h3>
+            <p>
+               La empresa líder en diseño y fabricación de equipos de medicina estética avanzada en Argentina.
+            </p>
+         </div>
+
+         <div class="col-1 d-flex justify-content-end align-items-end" id="imagenesFooter" text>
+            <img class="p-2" src="../assets/images/lgofacebook.jpg" alt="logo facebook" id="imagenesRedes">
+            <img class="p-2" src="../assets/images/logoinsta.png" alt="logo instagram" id="imagenesRedes">
+         </div>
+      </div>
+
    </footer>
 
 </body>

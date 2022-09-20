@@ -5,67 +5,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>MiProyecto</title>
  </head>
 
- <body id="grilla">
-    <header id="arriba">
-      
-          <h1 class="nombreMarca">
-             Infiniti Life
-          </h1>
-           <div>
-            <img src="#" alt="LOGO" class="estilologo">
-           </div>
-          <nav class="navigation">
-             <ul class="menuNavegacion">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/nuestrosEquipos.html">Nuestros Equipos</a>
-                   <ul class="menuEquipos">
-                      <li><a href="./pages/nuestrosEquipos.html#velaLife">Vela Life</a></li>
-                      <li><a href="./pages/nuestrosEquipos.html#crioLife">Crio Life</a></li>
+ <body>
+
+    <header class="container">
+
+      <div class="row" id="header">
+
+         <div class="row">
+            <h2 class="col" id="nombreMarca">
+               Infiniti Life
+            </h2>
+         </div>                
+
+         <div class="row text-center">
+            <nav class="col navbar navbar-expand-lg navbar-light" id="navigation">
+               <div class="container">
+                  <img src="#" alt="LOGO">
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                   <ul class="navbar-nav mx-auto">
+                     <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Nuestros Equipos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="menuEquipos">
+                         <li><a class="dropdown-item" href="./pages/nuestrosEquipos.html#velaLife">Vela Life</a></li>
+                         <li><a class="dropdown-item" href="./pages/nuestrosEquipos.html#crioLife">Crio Life</a></li>
+                        </ul>
+                      </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="./pages/ventaAccesorios.html">Venta Accesorios</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                     </li>
                    </ul>
-                </li>
-                <li><a href="./pages/ventaAccesorios.html">Venta Accesorios</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-             </ul>
-          </nav>
+                 </div>
+               </div>
+             </nav>
+          </div>
+
+      </div>         
 
     </header>
 
-    <main>
-      
-         <section id="section-uno">
-            <img class="rotate" src="./assets/images/principal.jpg" alt="Equipos Propios">
-          </section>
-   
-          <section id="section-dos">
-            <p id="texto-uno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti illum eius, quasi delectus esse
+    <main class="container">
+
+      <div class="row" id="main">
+         <div class="col-12 d-flex justify-content-center align-items-center">
+            <img src="./assets/images/principal.jpg" class="img-fluid" alt="Equipos Propios" id="imagsection">
+         </div>
+
+          <section class="row" id="section">
+            <p class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" id="texto-uno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti illum eius, quasi delectus esse
                voluptatem non natus.
                Perspiciatis reprehenderit vitae optio, maxime dolorum molestias ratione mollitia? Itaque, soluta
                reprehenderit.</p>
-            <p id="texto-dos">
+            <p class="col-6 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" id="texto-dos">
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consequatur sed, provident magni molestiae exercitationem velit harum doloremque animi amet iure minus, earum reiciendis veniam quaerat? Blanditiis quisquam accusamus facere, illum veritatis nemo omnis inventore, distinctio quam, enim deleniti maxime facilis minus cumque itaque doloremque incidunt quod? Tenetur, sint quis.
             </p>
           </section>
-
+      </div>
 
     </main>
 
-    <footer>
-       <h3>
-          Infiniti Life
-       </h3>
-       <p>
-          La empresa líder en diseño y fabricación de equipos de medicina estética avanzada en Argentina.
-       </p>
-       <div id="imagenesFooter">
-         <img src="./assets/images/lgofacebook.jpg" alt="logo facebook" id="imagenesRedes">
-         <img src="./assets/images/logoinsta.png" alt="logo instagram" id="imagenesRedes">
-       </div>
-      
+    <footer class="container">
+      <div class="row" id="footer">
+         <div class="col-11 ">
+            <h3>
+               Infiniti Life
+            </h3>
+            <p>
+               La empresa líder en diseño y fabricación de equipos de medicina estética avanzada en Argentina.
+            </p>
+         </div>
+
+         <div class="col-1 d-flex justify-content-end align-items-end" id="imagenesFooter" text>
+               <img class="p-2" src="./assets/images/lgofacebook.jpg" alt="logo facebook" id="imagenesRedes">
+               <img class="p-2" src="./assets/images/logoinsta.png" alt="logo instagram" id="imagenesRedes">
+        </div>
+      </div>       
+
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
  </body>
+
+</html>
