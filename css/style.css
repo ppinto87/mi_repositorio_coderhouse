@@ -16,24 +16,25 @@ body {
 
 #header {
     height: 10vh;
-    background: linear-gradient(90deg, rgba(99,224,109,1) 0%, rgba(191,241,207,1) 51%, rgba(95,214,238,1) 100%) ;    
- }
+    background: linear-gradient(90deg, rgba(99, 224, 109, 1) 0%, rgba(191, 241, 207, 1) 51%, rgba(95, 214, 238, 1) 100%);
+}
 
 #nombreMarca {
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
- } 
- 
- @keyframes aparecer {
+}
+
+@keyframes aparecer {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
- }
- 
+}
+
 
 /* ESTILO MENU NAVEGACION */
 
@@ -41,12 +42,12 @@ body {
     background-color: #9bfab0 !important;
     transition: all .5s;
     color: white;
-    border-radius: 5px;   
+    border-radius: 5px;
 }
 
 /* ESTILO SUBMENU EQUIPOS */
 
-#menuEquipos li a:hover  {
+#menuEquipos li a:hover {
     background-color: #9bfab0 !important;
     visibility: visible;
     opacity: 1;
@@ -54,9 +55,9 @@ body {
 
 /* ESTILOS DE MAIN */
 
-#main {    
-    height: 85vh;
-    
+#main {
+    height: 100vh;
+
 }
 
 
@@ -64,11 +65,11 @@ body {
 
 #footer {
     height: 10vh;
-    background: linear-gradient(90deg, rgba(95,214,238,1) 0%, rgba(191,241,207,1) 51%, rgba(99,224,109,1) 100%);    
+    background: linear-gradient(90deg, rgba(95, 214, 238, 1) 0%, rgba(191, 241, 207, 1) 51%, rgba(99, 224, 109, 1) 100%);
 
 }
 
-#imagenesRedes{
+#imagenesRedes {
     width: 40px;
 }
 
