@@ -1,95 +1,37 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ESTILOS DE BODY */
-
-body {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-}
-
-/* ESTILOS DE HEADER */
-
 #header {
-    height: 10vh;
-    background: linear-gradient(90deg, rgba(99, 224, 109, 1) 0%, rgba(191, 241, 207, 1) 51%, rgba(95, 214, 238, 1) 100%);
-}
+  height: 10vh;
+  background: linear-gradient(90deg, #63e06d 0%, #bff1cf 51%, #5fd6ee 100%); }
 
 #nombreMarca {
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
-}
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite; }
 
 @keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /* ESTILO MENU NAVEGACION */
-
 #navigation ul li a:hover {
-    background-color: #9bfab0 !important;
-    transition: all .5s;
-    color: white;
-    border-radius: 5px;
-}
+  background-color: #9bfab0 !important;
+  transition: all .5s;
+  color: white;
+  border-radius: 5px; }
 
 /* ESTILO SUBMENU EQUIPOS */
-
 #menuEquipos li a:hover {
-    background-color: #9bfab0 !important;
-    visibility: visible;
-    opacity: 1;
-}
-
-/* ESTILOS DE MAIN */
+  background-color: #9bfab0 !important;
+  visibility: visible;
+  opacity: 1; }
 
 #main {
-    height: 100vh;
-
-}
-
-
-/* ESTILOS DE FOOTER */
+  height: 100vh; }
 
 #footer {
-    height: 10vh;
-    background: linear-gradient(90deg, rgba(95, 214, 238, 1) 0%, rgba(191, 241, 207, 1) 51%, rgba(99, 224, 109, 1) 100%);
-
-}
+  height: 10vh;
+  background: linear-gradient(90deg, #5fd6ee 0%, #bff1cf 51%, #63e06d 100%); }
 
 #imagenesRedes {
-    width: 40px;
-}
-
-
-/* MEDIA QUERYS */
-
-/* @media only screen and (max-width: 1200px){
-    #imagsection{
-        width: 800px;
-    }
-}
-
-@media only screen and (max-width: 900px){
-    #imagsection{
-        width: 500px;
-    }
-}
-
-@media only screen and (max-width: 480px){
-    #imagsection{
-        width: 400px;
-    }
-} */
+  width: 40px; }

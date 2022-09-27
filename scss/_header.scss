@@ -1,0 +1,51 @@
+#header {
+    height: 10vh;
+    background: map-get($paleta-gradientes,"header");
+}
+
+#nombreMarca {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ESTILO MENU NAVEGACION */
+
+#navigation ul {
+    li {
+
+        a {
+
+            &:hover {
+                background-color: #9bfab0 !important;
+                transition: all .5s;
+                color: white;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+/* ESTILO SUBMENU EQUIPOS */
+
+#menuEquipos li {
+    a {
+
+        &:hover {
+            background-color: #9bfab0 !important;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
