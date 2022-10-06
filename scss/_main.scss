@@ -1,4 +1,10 @@
+/* ESTILO MAIN*/
 #main {
-    height: 100vh;
-
+height: 100vh;
 }
+
+#imagenCarrusel{
+    object-fit: scale-down;
+    height: 50vh;
+    width: 100%;
+  }

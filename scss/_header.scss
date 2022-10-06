@@ -1,6 +1,7 @@
+/* ESTILO HEADER*/
 #header {
     height: 10vh;
-    background: map-get($paleta-gradientes,"header");
+    // background: map-get($paleta-gradientes,"header");
 }
 
 #nombreMarca {
@@ -21,6 +22,10 @@
 
 
 /* ESTILO MENU NAVEGACION */
+
+#navigation{
+    background-color: beige !important;
+}
 
 #navigation ul {
     li {
