@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 **node_modules
 /node_modules
 ./node_modules
-=======
-**node_modules
-/node_modules
-./node_modules
->>>>>>> 9d50d38ecfdb993955a4d776422cc4ba105a8da8
-=======
-**node_modules
-/node_modules
-./node_modules
->>>>>>> 9d50d38ecfdb993955a4d776422cc4ba105a8da8
 node_modules/
